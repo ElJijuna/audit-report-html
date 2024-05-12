@@ -1,0 +1,26 @@
+{
+  "name": "@jijuna/audit-report-html",
+  "private": false,
+  "version": "0.0.1",
+  "description": "html npm audit report ",
+  "main": "src/index.js",
+  "bin": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "npm run test",
+    "report:audit": "npm audit --json | node src/index.js --"
+  },
+  "keywords": [
+    "npm",
+    "audit",
+    "report",
+    "template"
+  ],
+  "author": "el jijuna",
+  "license": "MIT",
+  "devDependencies": {
+    "yargs": "^17.7.2"
+  }
+}
